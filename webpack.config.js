@@ -8,7 +8,7 @@ module.exports = {
         common: './src/js/common/index.js'
     },
     output: {
-        path: path.resolve(__dirname, 'docs'),
+        path: path.resolve(__dirname, 'build'),
     },
     module: {
         rules: [
@@ -35,14 +35,6 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebPackPlugin({
-            template: "./html/index.html",
-            filename: "./index.html",
-        }),
-        new HtmlWebPackPlugin({
-            filename: "./music.html",
-            template: "./html/music.html",
-        }),
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilename: "[id].css"
