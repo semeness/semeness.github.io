@@ -8,7 +8,7 @@ module.exports = {
         common: './src/js/common/index.js'
     },
     output: {
-        path: path.resolve(__dirname, 'www'),
+        path: path.resolve(__dirname, 'docs'),
     },
     module: {
         rules: [
