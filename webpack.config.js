@@ -2,10 +2,14 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 
+const PATH = {
+    SRC: path.resolve(__dirname, 'src')
+}
+
 module.exports = {
     entry: {
-        main: './src/js/main/index.js',
-        common: './src/js/common/index.js'
+        main: path.resolve(PATH.SRC, 'main/index.js'),
+        common: path.resolve(PATH.SRC, 'common/index.js')
     },
     output: {
         path: path.resolve(__dirname, 'build'),
@@ -29,9 +33,17 @@ module.exports = {
                 ]
             },
             {
-                test: /\.css$/,
-                use: [MiniCssExtractPlugin.loader, "css-loader"]
-            }
+                test: /\.scss$/,
+                use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
+            },
+
+            {
+                test: /\.(jpe?g|png|gif)$/,
+                loader: 'file-loader',
+                options: {
+                    name: '[path][name].[ext]',
+                },
+            },
         ]
     },
     plugins: [

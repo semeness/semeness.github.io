@@ -1,0 +1,52 @@
+@import "variables";
+
+.header {
+    width: 100%;
+    height: $header-height;
+    position: absolute;
+    background-color: black;
+    z-index: 10;
+    &__menu-link {
+        color: white;
+        font-size: 17px;
+        text-decoration: none;
+        padding: 7px;
+        border: 0.5px solid transparent;
+        padding: 7px;        
+        &:not(.active):hover {
+            color: black;
+            background-color: white;
+            border: 0.5px solid white;
+            border-radius: 5px;
+        }
+        &.active {
+            border: 0.5px solid white;
+            border-radius: 5px;
+            padding: 7px;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        height: 100%;
+    }
+    &__logo {
+        height: 60px;
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+    }
+    &__menu-item {
+        list-style-type: none;
+        margin-right: 15px;
+        &:last-child {
+            margin: 0;
+        }
+    }
+    
+}
+

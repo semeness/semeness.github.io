@@ -1,0 +1,24 @@
+.section-hello {
+  background-image: url(src/common/images/frst-section.jpg);
+  height: 680px; }
+  .section-hello__img {
+    filter: brightness(65%);
+    background-image: url(src/common/images/frst-section.jpg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0; }
+  .section-hello__content-wrapper {
+    z-index: 1; }
+  .section-hello__name {
+    margin-top: 25px;
+    color: white;
+    font-size: 80px;
+    border: 3px solid white;
+    padding: 10px 100px 5px 25px; }
+  .section-hello__greeting {
+    color: white;
+    font-size: 25px;
+    text-align: center; }
+
