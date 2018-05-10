@@ -1,0 +1,30 @@
+.double-text {
+    font-size: 35px;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    &:before {
+        background: none repeat scroll 0 0 black;
+        content: "";
+        height: 2px;
+        left: -35px;
+        position: absolute;
+        top: 18px;
+        width: 30px;
+    }
+    &:after {
+        background: none repeat scroll 0 0 black;
+        content: "";
+        height: 2px;
+        right: -35px;
+        position: absolute;
+        top: 18px;
+        width: 30px;
+    }
+    &__second {
+        background-color: #666666;
+        color: white;
+        border-radius: 5px;
+        padding: 7px 5px 3px;
+    }
+}

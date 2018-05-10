@@ -1,8 +1,8 @@
 .section-hello {
     background-image: url(../common/images/frst-section.jpg);
-    height: 680px;    
+    height: 680px;            
     &__img {
-        filter: brightness(65%);
+        filter: brightness(75%);
         background-image: url(../common/images/frst-section.jpg);
         position: absolute;
         left: 0;
@@ -25,4 +25,49 @@
         font-size: 25px;
         text-align: center;
     }    
+}
+
+.section-about {
+    background-color: rgb(255, 255, 255);    
+    height: 920px;                
+    &__content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__icon{
+        width: 200px;
+    }
+    &__header {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    &__main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        &__img {
+            width: 300px;
+        }
+        &__item {
+            color: grey;
+            margin-right: 40px;
+            max-width: 300px;
+            &:last-child {
+                margin: 0;
+            }
+            &__middle-item {
+                margin-bottom: 25px;
+                
+                &__img {
+                    width: 180px;
+                }
+            }
+        }
+    }
 }
