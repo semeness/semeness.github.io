@@ -9,7 +9,8 @@ const PATH = {
 module.exports = {
     entry: {
         main: path.resolve(PATH.SRC, 'main/index.js'),
-        common: path.resolve(PATH.SRC, 'common/index.js')
+        common: path.resolve(PATH.SRC, 'common/index.js'),
+        music: path.resolve(PATH.SRC, 'music/index.js')
     },
     output: {
         path: path.resolve(__dirname, 'build'),

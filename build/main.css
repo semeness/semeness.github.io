@@ -1,9 +1,7 @@
 .section-hello {
-  background-image: url(src/common/images/frst-section.jpg);
   height: 680px; }
   .section-hello__img {
     filter: brightness(75%);
-    background-image: url(src/common/images/frst-section.jpg);
     position: absolute;
     left: 0;
     top: 0;
@@ -31,7 +29,9 @@
     align-items: center;
     justify-content: center; }
   .section-about__icon {
-    width: 200px; }
+    width: 200px;
+    margin-bottom: 15px;
+    margin-left: 15px; }
   .section-about__header {
     display: flex;
     justify-content: center;
@@ -41,18 +41,22 @@
   .section-about__main {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: row; }
-    .section-about__main__img {
-      width: 300px; }
-    .section-about__main__item {
-      color: grey;
-      margin-right: 40px;
-      max-width: 300px; }
-      .section-about__main__item:last-child {
-        margin: 0; }
-      .section-about__main__item__middle-item {
-        margin-bottom: 25px; }
-        .section-about__main__item__middle-item__img {
-          width: 180px; }
+  .section-about__img {
+    width: 300px;
+    height: 385px; }
+    .section-about__img_right {
+      float: right; }
+  .section-about__item {
+    color: grey;
+    margin-right: 40px;
+    width: 33.3333%; }
+    .section-about__item:last-child {
+      margin: 0; }
+  .section-about__complex {
+    margin-bottom: 25px;
+    font-size: 18px; }
+  .section-about__complex-img {
+    width: 180px;
+    float: right; }
 
