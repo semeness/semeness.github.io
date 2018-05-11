@@ -1,6 +1,6 @@
 import {Slider} from '../common/js/Slider/index';
 
-$(function() {
+$(() => {
     var slider = new Slider({
         left: '.slider__arrow_left',
         right: '.slider__arrow',

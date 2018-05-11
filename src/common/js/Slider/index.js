@@ -1,7 +1,12 @@
 class Slider {
-    constructor ({left, right, slider, sliderItem}){
+    constructor({
+        left,
+        right,
+        slider,
+        sliderItem
+    }) {
         console.log("FU");
     }
 }
 
-export {Slider};
+export default Slider;
