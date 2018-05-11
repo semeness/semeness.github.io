@@ -1,5 +1,5 @@
 class Slider {
-    constructor (){
+    constructor ({left, right, slider, sliderItem}){
         console.log("FU");
     }
 }

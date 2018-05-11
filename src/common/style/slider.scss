@@ -22,6 +22,9 @@
     &__arrow-img {
         width: 100px;
         filter: invert(1);
+        &:hover {
+            filter: blur(2px);
+        }
         &_left {
             -moz-transform: scale(-1, 1);
             -webkit-transform: scale(-1, 1);
